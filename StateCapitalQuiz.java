@@ -58,6 +58,11 @@ public class StateCapitalQuiz {
 
         // Sort the array by capital using bubble sort
         bubbleSortByCapital(stateCapitals);
+        // Display the sorted array
+        System.out.println("State-Capital Pairs (Sorted by Capital):");
+        for (String[] pair : stateCapitals) {
+            System.out.println(pair[0] + " - " + pair[1]);
+        }
 
         // Quiz the user on state capitals
         int correctCount = 0;
